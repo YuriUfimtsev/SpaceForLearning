@@ -1,0 +1,34 @@
+﻿@page "/downloader"
+
+<h3>Downloader</h3>
+
+<div class="upload-container @hoverClass">
+    <img id="upload-image" src="upload.svg">
+    <InputFile id="file-input" OnChange="@LoadFile" @ondragover="OnDragover" @ondragleave="OnDragleave" />
+    <p>Click to choose file or drop it here.</p>
+</div>
+<p>@message</p>
+
+@code {
+
+    private string hoverClass;
+    private string? message;
+
+    public Downloader()
+    {
+        hoverClass = string.Empty;
+    }
+
+    void OnDragover() => hoverClass = "hover";
+
+    void OnDragleave() => hoverClass = string.Empty;
+
+    private void LoadFile(InputFileChangeEventArgs inputFile)
+    {
+        OnDragleave();
+        var file = inputFile.File;
+        var stream = file.OpenReadStream();
+        // Do smth
+        message = $"'{file.Name}' file has been successfully uploaded.";
+    }
+}
