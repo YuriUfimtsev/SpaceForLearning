@@ -1,0 +1,37 @@
+﻿[
+  {
+    "secondName": "Анонимов",
+    "firstName": "Аноним",
+    "patronymic": "Анонимович",
+    "asessment": "F",
+    "proctoringStatus": "Пройден"
+  },
+  {
+    "SecondName": "Иванович",
+    "FirstName": "Иван",
+    "Patronymic": "Иванов",
+    "Assessment": "D",
+    "ProctoringStatus": "Не пройден"
+  },
+  {
+    "SecondName": "Иванович",
+    "FirstName": "Иван",
+    "Patronymic": "Иванов",
+    "Assessment": "C",
+    "ProctoringStatus": "Пройден"
+  },
+  {
+    "SecondName": "Иванович",
+    "FirstName": "Иван",
+    "Patronymic": "Иванов",
+    "Assessment": "B",
+    "ProctoringStatus": "Не пройден"
+  },
+  {
+    "SecondName": "Иванович",
+    "FirstName": "Иван",
+    "Patronymic": "Иванов",
+    "Assessment": "A",
+    "ProctoringStatus": "Пройден"
+  }
+]
